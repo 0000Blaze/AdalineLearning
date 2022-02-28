@@ -1,0 +1,36 @@
+digraph G {
+    label ="McCulloch-Pitts neural network for 2 bit input OR, AND , NAND and NOR gate"
+        rankdir=LR
+    splines=line
+        
+        node [fixedsize=true, label=""];
+
+        subgraph cluster_0 {
+        color=white;
+        node [style=solid,color=blue4, shape=circle];
+        b[label="b"] x1[label="x1"] x2[label="x2"];
+        label = "layer 1 (Input layer)";
+    }
+
+    subgraph cluster_1 {
+        color=white;
+        node [style=solid,color=red2, shape=circle];
+        a12 [label="Σ|f"];
+        label = "layer 2 (hidden layer)";
+    }
+
+    subgraph cluster_2 {
+        color=white;
+        node [style=solid,color=seagreen2, shape=circle];
+        O[label="O"];
+        label="layer 3 (output layer)";
+    }
+
+        x1 -> a12[label="w1"];
+        x2 -> a12[label="w2"];
+        b -> a12[label="bias"];
+        
+        a12 -> O
+        
+}
+

@@ -1,0 +1,2 @@
+For visulization:
+https://www.geeksforgeeks.org/how-to-visualize-a-neural-network-in-python-using-graphviz/

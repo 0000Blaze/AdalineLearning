@@ -1,0 +1,10 @@
+// A Round Graph
+digraph {
+	A [label=X]
+	B [label=Y]
+	C [label=H]
+	D [label=O]
+	A -> C
+	B -> C [constraint=false]
+	C -> D [constraint=false]
+}
